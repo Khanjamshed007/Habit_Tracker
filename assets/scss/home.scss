@@ -1,12 +1,12 @@
 // Form to add habits
 #add-habit-form {
     position: absolute;
-    top: 15%;
+    top: 20%;
     display: none;
-    left: 40%;
-    background-color: rgb(216, 223, 230);
+    left: 30%;
+    background-color: #d8dfe6;
     z-index: 1;
-    width: 30%;
+    width: 40%;
     padding: 2%;
 }
 
@@ -118,5 +118,15 @@ button {
 #btn-streak {
     i {
         margin-right: 0.5rem;
+    }
+}
+
+// Responsive Media Queries
+
+@media(max-width:700px){
+    #add-habit-form{
+        top: 30%;
+        left: 24%;
+        width: 52%;
     }
 }
