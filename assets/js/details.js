@@ -7,10 +7,10 @@ document.getElementById('month-name').innerText = month;
 var weekdays = document.getElementsByClassName('day-name');
 for (let i = 0; i < weekdays.length; i++) {
     if (i == 0) {
-        weekdays[i].innerText = "Today/" + moment().add(i, 'days').format("Do");
+        weekdays[i].innerText = "Today/" + moment().subtract(i, 'days').format("Do");
         weekdays[i].style.fontWeight = "700";
     } else {
-        weekdays[i].innerText = moment().add(i, 'days').format('ddd/Do');
+        weekdays[i].innerText = moment().subtract(i, 'days').format('ddd/Do');
     }
 }
 
@@ -47,5 +47,4 @@ for (let i = 0; i < days.length; i++) {
         days[i].appendChild(text);
         days[i].style.backgroundColor = "rgb(110,117,112)";
     }
-
 }

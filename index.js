@@ -9,7 +9,7 @@ const route = require('./routes/index')
 const db = require('./config/mongoose')
 const passport = require('passport')
 const passportLocal = require('./config/passport-local-strategy')
-const PORT = 8000;
+const PORT =process.env.PORT || 8000;
 const sassMiddleware = require('node-sass-middleware');
 
 // Using sassMiddleware to import file form scss to css
