@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose=require('mongoose');
 
 mongoose.set('strictQuery', true);
-mongoose.connect(process.env.MONGO_CONNECTION_URL)
+mongoose.connect('mongodb+srv://khanjamshed404:Jamshed404@cluster0.ijbqbyd.mongodb.net/Habit-Tracker?retryWrites=true&w=majority')
 
 
 const db=mongoose.connection;
