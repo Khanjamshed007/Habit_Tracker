@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGO_CONNECTION_URL)
 
 const db=mongoose.connection;
 
-db.on('error',console.error.bind(console,"Error to connect with mongodb"))
+db.on('error',console.error.bind(console,"Error to connect with MongoDB"))
 
 db.once('open',()=>{
     console.log('Connected to Database:mongodb')
