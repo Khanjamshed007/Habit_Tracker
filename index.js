@@ -38,7 +38,7 @@ app.set('views', path.join(__dirname, 'views'))
 // Using Express session
 app.use(session({
     name: "Habit Tracker",
-    secret: process.env.COOKIES_SECRECT,
+    secret: "Jamshed",
     saveUninitialized: false,
     resave: false,
     cookie: {
